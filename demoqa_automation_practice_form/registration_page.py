@@ -62,7 +62,6 @@ class RegistrationPage:
         browser.element('#currentAddress').perform(command.js.set_value(value))  # если один раз
 
     def fill_state(self, value):
-        browser.element('#state').perform(command.js.scroll_into_view)
         browser.element('#state').click().element(by.text(value)).click()
 
     def fill_city(self, value):
