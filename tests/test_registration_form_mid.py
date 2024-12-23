@@ -43,7 +43,7 @@ def test_registration_user(browser_settings):
     with allure.step("Загружаем картинку"):
         registration_page.up_load_picture(new_user.images)
 
-    with allure.step("Заполняем а текущий адрес"):
+    with allure.step("Заполняем текущий адрес"):
         registration_page.fill_current_address(new_user.current_address)
 
     with allure.step("Заполняем штат"):

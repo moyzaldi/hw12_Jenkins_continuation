@@ -51,7 +51,8 @@ def browser_settings(request):
 
         browser.config.base_url = 'https://demoqa.com'
         options.page_load_strategy = 'eager'
-        browser.driver.fullscreen_window()
+        browser.config.window_height = 1080
+        browser.config.window_width = 1920
 
         yield
 
